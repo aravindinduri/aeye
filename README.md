@@ -50,10 +50,6 @@ AEYE leverages a modern, serverless-friendly technology stack:
         *   **Firestore / Realtime Database:** For storing incident metadata and enabling real-time UI updates.
 *   **AI Engine:**
     *   ![Google Cloud](https://img.shields.io/badge/Google_Gemini_Pro_Vision-API-4285F4?logo=googlecloud&logoColor=white)
-*   **Video Processing (within Firebase Functions or called service):**
-    *   **[Specify how frames are extracted, e.g., "Google Cloud Transcoder API," "FFmpeg via custom Function layer," or "Third-party video API"]**
-    *   *(If using FFmpeg in Functions, mention potential complexities or if a pre-built layer is used).*
-
 ---
 
 ## ⚙️ Getting Started (Prototype - Local Setup with Firebase Emulators)
