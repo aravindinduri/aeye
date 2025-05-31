@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+ 
+    --primary: 270 70% 50%; /* Violet */
+    --primary-foreground: 0 0% 100%; /* White */
+ 
+    --secondary: 270 20% 96%; /* Light muted violet */
+    --secondary-foreground: 270 70% 40%; /* Darker violet for text on secondary */
+ 
+    --muted: 240 5% 96%; /* Light grey */
+    --muted-foreground: 240 4% 46%;
+ 
+    --accent: 270 70% 95%; /* Very light violet */
+    --accent-foreground: 270 70% 30%; /* Darker violet text on accent */
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 20% 88%; /* Light violet border */
+    --input: 270 20% 88%; /* Light violet input background */
+    --ring: 270 70% 55%; /* Violet for focus rings */
+ 
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors for light theme with violet */
+    --sidebar-background: 270 15% 97%; /* Very light violet/grey */
+    --sidebar-foreground: 270 15% 20%; /* Dark text */
+    --sidebar-primary: 270 70% 50%; /* Violet */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 270 60% 90%; /* Lighter violet for hover */
+    --sidebar-accent-foreground: 270 70% 40%; /* Darker violet text */
+    --sidebar-border: 270 20% 85%;
+    --sidebar-ring: 270 70% 55%;
+  }
+ 
+  .dark {
+    --background: 220 20% 5%; /* Very dark, slightly cool tone */
+    --foreground: 220 15% 95%; /* Very light, slightly cool tone */
+ 
+    --card: 220 20% 8%; /* Slightly lighter than background */
+    --card-foreground: 220 15% 95%;
+ 
+    --popover: 220 20% 8%;
+    --popover-foreground: 220 15% 95%;
+ 
+    --primary: 270 80% 65%; /* Vibrant violet */
+    --primary-foreground: 270 80% 98%; /* Very light violet, almost white */
+ 
+    --secondary: 270 30% 25%; /* Darker, muted violet */
+    --secondary-foreground: 220 15% 90%;
+ 
+    --muted: 220 15% 15%; /* Dark grey */
+    --muted-foreground: 220 10% 60%; /* Lighter grey for muted text */
+ 
+    --accent: 270 80% 55%; /* Slightly less bright violet for hover/accent on dark background */
+    --accent-foreground: 270 80% 98%; /* Light text on violet accent */
+ 
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 270 30% 20%; /* Dark violet border */
+    --input: 270 30% 20%;  /* Dark violet input background */
+    --ring: 270 80% 70%; /* Violet for focus rings */
+
+    /* Sidebar specific colors for dark mode with violet */
+    --sidebar-background: 220 20% 7%; /* Consistent dark for sidebar */
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 270 80% 65%; /* Violet */
+    --sidebar-primary-foreground: 270 80% 98%;
+    --sidebar-accent: 270 50% 35%; /* Darker violet accent for hover */
+    --sidebar-accent-foreground: 270 80% 95%;
+    --sidebar-border: 270 30% 15%;
+    --sidebar-ring: 270 80% 70%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
